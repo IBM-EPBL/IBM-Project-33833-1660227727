@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    
+      .background {
+        background-image: url("/images/bg4.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .header {
+        display: flex;
+        flex: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 60px;
+        padding-right: 30px;
+        background-color: #2e6e82;
+        align-items: center;
+      }
+     .btn{
+        color: #fff;
+        font-size: large;
+        text-decoration: none;
+     }
+     .titleWrapper{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .title{
+        background-color: #2e6e82;
+        border-radius: 5px;
+        padding: 20px 90px;
+     }
+    </style>
+  </head>
+  <body class="background">
+    <div class="header">
+      <a href="inputs.html" class="btn"> Predict
+        </button>
+    </div>
+    <div class="titleWrapper">
+        <h1 class="title">Chronic Kidney disease predicition</h1>
+    </div>
+  </body>
+</html>

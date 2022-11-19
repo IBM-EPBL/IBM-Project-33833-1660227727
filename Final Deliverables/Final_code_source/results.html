@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        background-color: #2e6e82;
+        border-radius: 5px;
+        padding: 20px 90px;
+        color: white;
+      }
+      .resultWrapper {
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+      .result {
+        border-radius: 10px;
+        padding: 10px 30px;
+      }
+      .result-positive {
+        color: red;
+        font-size: larger;
+      }
+      .result-negative {
+        color: blue;
+        font-size: larger;
+      }
+      h2 {
+        color: #2e6e82;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Chronic Kidney disease predicition</h1>
+    </div>
+    <div class="resultWrapper">
+      <div class="result">
+        <h2>
+          Prediction:
+          <samp class="result-positive">You have Chronic Kidney Disease</samp>
+        </h2>
+        <!-- <h2>
+          Prediction:
+          <samp class="result-negative"> You Don't Chronic Kidney Disease</samp>
+        </h2> -->
+      </div>
+    </div>
+  </body>
+</html>
