@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        background-color: #2e6e82;
+        border-radius: 5px;
+        padding: 20px 90px;
+        color: white;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        background-color: #2e6e82;
+        padding: 50px;
+        border-radius: 50px;
+      }
+      input {
+        width: 300px;
+        height: 25px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: large;
+      }
+      select {
+        width: 310px;
+        height: 25px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: large;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      button {
+        position: relative;
+        font-size: 14px;
+        letter-spacing: 3px;
+        height: 3em;
+        padding: 0 3em;
+        border: none;
+        background-color: #2e6e82;
+        color: #fff;
+        text-transform: uppercase;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      button::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        height: 0px;
+        width: 100%;
+        background: rgb(46, 110, 130);
+        background: linear-gradient(
+          90deg,
+          rgba(46, 110, 130, 1) 20%,
+          rgba(46, 110, 130, 1) 100%
+        );
+        transition: 0.2s;
+      }
+
+      button .label {
+        position: relative;
+      }
+
+      button .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3em;
+        width: 3em;
+        position: absolute;
+        top: 3em;
+        right: 0;
+        opacity: 0;
+        transition: 0.4s;
+      }
+
+      button:hover::before {
+        height: 100%;
+      }
+
+      button:hover .icon {
+        top: 0;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Chronic Kidney disease predicition</h1>
+    </div>
+    <div class="inputs">
+      <input type="number" placeholder="Blood Urea" />
+      <input type="number" placeholder="Blood Glucose Random" />
+      <select name="Coronary Artery Disease" id="">
+        <option value="Coronary Artery Disease">Coronary Artery Disease</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <select name="anemia" id="">
+        <option value="anemia">Anemia</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <select name="pus cell" id="">
+        <option value="pus cell">Pus Cell</option>
+        <option value="normal">Normal</option>
+        <option value="abnormal">Abnormal</option>
+      </select>
+      <input type="number" placeholder="Red Blood Cell Count" />
+      <select name="diabetes mellitus" id="">
+        <option value="diabetes mellitus">Diabetes Mellitus</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <select name="pedal edema" id="">
+        <option value="pedal edema">Pedal Edema</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="btn">
+      <a href="results.html">
+        <button>
+          <span class="label">Predict</span>
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                fill="currentColor"
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
